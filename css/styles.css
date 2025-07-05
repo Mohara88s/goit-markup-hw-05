@@ -521,6 +521,7 @@ section {
 
 .subscribe-btn-icon {
   margin-left: 16px;
+  fill: var(--bg-color);
 }
 
 /* modal */

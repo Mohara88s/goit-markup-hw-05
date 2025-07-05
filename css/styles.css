@@ -710,7 +710,7 @@ section {
   margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(var(--dark-color-rgb), 0.4);
-  transition: border-color var(--trans-norm), background-color var(--trans-norm),
+  transition: border var(--trans-norm), background-color var(--trans-norm),
     fill var(--trans-norm);
   fill: transparent;
   cursor: pointer;

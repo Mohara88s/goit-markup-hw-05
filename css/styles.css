@@ -487,6 +487,11 @@ section {
   border: 1px solid var(--bg-color);
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  outline: transparent;
+  transition: border-color var(--trans-norm);
+}
+.subscribe-form-input:focus {
+  border-color: var(--success);
 }
 
 .subscribe-form-input::placeholder {
@@ -516,7 +521,7 @@ section {
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color: var(--active-primary-brand-color);
+  background-color: var(--success);
 }
 
 .subscribe-btn-icon {

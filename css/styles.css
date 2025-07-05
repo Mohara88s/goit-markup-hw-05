@@ -601,8 +601,8 @@ section {
   transition: fill var(--trans-norm);
 }
 
-.modal-close-btn:hover + .modal-close-btn-icon,
-.modal-close-btn:focus + .modal-close-btn-icon {
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--bg-color);
 }
 
@@ -651,7 +651,7 @@ section {
 .modal-form-icon {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 16px;
   transform: translateY(-50%);
   fill: var(--dark-color);
   transition: fill var(--trans-norm);
@@ -667,6 +667,11 @@ section {
   padding: 8px 16px;
   width: 100%;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(var(--dark-color-rgb), 0.4);
+  background-color: transparent;
   border: 1px solid rgba(var(--dark-color-rgb), 0.4);
   box-sizing: border-box;
   border-radius: 4px;
@@ -682,9 +687,12 @@ section {
   color: rgba(var(--dark-color-rgb), 0.4);
 }
 
-.modal-form-label-agreement {
+.modal-form-label-privacy-container {
+  margin-bottom: 24px;
+}
+
+.modal-form-label-privacy {
   display: block;
-  margin-bottom: 25px;
   color: var(--light-slate);
   user-select: none;
 }
@@ -723,7 +731,7 @@ input[type='checkbox']:checked
   opacity: 1;
 }
 
-.modal-form-agreement-link {
+.modal-form-privacy-link {
   line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
